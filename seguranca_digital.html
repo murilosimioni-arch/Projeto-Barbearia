@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Barbeiaria</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #bbeeff;
+            color: #000000;
+            line-height: 1.6;
+        }
+
+        /* CABEÇALHO */
+
+        header {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+            margin: 5px;
+        }
+
+        /* MENU */
+
+        nav {
+            background-color: #111111;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00d4ff;
+        }
+
+        /* SEÇÕES */
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #167d9a;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+
+        /* INÍCIO */
+
+        .inicio {
+            display: flex;
+            align-items: center;
+            gap: 35px;
+        }
+
+        .inicio img {
+            width: 45%;
+            border-radius: 15px;
+        }
+
+        .inicio-texto {
+            width: 55%;
+        }
+
+        .inicio-texto h2 {
+            text-align: left;
+        }
+
+        /* CARDS */
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #167d9a;
+            margin-bottom: 10px;
+        }
+
+        /* ATIVIDADES */
+
+        .atividade {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 6px solid #00a8cc;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .atividade h3 {
+            color: #167d9a;
+            margin-bottom: 10px;
+        }
+
+        /* PROJETO */
+
+        .projeto {
+            background: linear-gradient(135deg, #16222a, #3a6073);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .projeto h2 {
+            color: white;
+        }
+
+        .botao {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #cbcbcb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .botao:hover {
+            background-color: #b8c6c9;
+        }
+
+        /* REFLEXÃO */
+
+        .reflexao {
+            background-color: #e7f8fc;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .reflexao p {
+            font-size: 19px;
+        }
+
+        /* RODAPÉ */
+
+        footer {
+            background-color: #ece7e7;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 30px;
+        }
+
+        /* RESPONSIVIDADE */
+
+        @media (max-width: 700px) {
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                display: block;
+                margin: 8px;
+            }
+
+            .inicio {
+                flex-direction: column;
+            }
+
+            .inicio img,
+            .inicio-texto {
+                width: 100%;
+            }
+
+            .inicio-texto h2 {
+                text-align: center;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- CABEÇALHO -->
+
+    <header>
+
+        <h1>Barbearia</h1>
+
+        <p></p>
+
+        <p>
+      Especializada no corte de cabelo masculino, design e manutenção de barba, bigode e cuidados com a pele do rosto.
+        </p>
+
+    </header>
+
+
+    <!-- MENU -->
+
+    <nav>
+
+        <a href="#inicio">Início</a>
+
+        <a href="#tecnologias">Tipos de Barbearia</a>
+
+        <a href="#inovacao">Tipos de Corte de Cabelo</a>
+
+        <a href="#atividades">Preços</a>
+
+        <a href="#projeto">Agendar</a>
+
+    </nav>
+
+
+    <!-- INÍCIO -->
+
+    <section id="inicio">
+
+        <div class="inicio">
+
+            <img
+                src="659642596e30af85a66702f232ca31d5.jpg"
+                alt="Segurança digital e proteção de dados"
+            >
+
+            <div class="inicio-texto">
+
+                <h2> Bem-vindos ao site de barbearia!</h2>
+
+                <p>
+                    Este espaço foi criado para demonstrar as barbearias.
+                </p>
+
+                <br>
+
+                <p>
+                    Uma barbearia é um estabelecimento especializado no corte de cabelo masculino, design e manutenção de barba, bigode e cuidados com a pele do rosto. Historicamente um dos ofícios mais antigos do mundo, o conceito evoluiu de um serviço essencial de higiene para um ponto de encontro cultural e de estética masculina.
+                </p>
+
+                <br>
+
+                <p>
+                    
+                </p>
+
+                <br>
+
+                <p>
+                    
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TECNOLOGIAS -->
+
+    <section id="tecnologias">
+
+        <h2>📐 Tipos de Barbearia no Mercado Atual</h2>
+
+        <div class="cards">
+
+
+            <div class="card">
+
+                <img
+                    src="images.jpeg"
+                    alt="Inteligência Artificial"
+                >
+
+                <h3>Barbearia Tradicional / Retrô</h3>
+
+                <p>
+                    • Tradicional / Retrô: Resgata o ritual clássico do século passado, focando na experiência nostálgica da barba feita com navalha e toalha quente em ambientes com decoração vintage e cadeiras de couro.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <img
+                    src="unidade-higienopolis-fachada.webp"
+                    alt="Robótica"
+                >
+
+                <h3>Barbearia Moderna e Pub / Lounge</h3>
+
+                <p>
+                    • Moderna e Pub / Lounge: Funciona como um centro de lazer e convivência masculina, integrando os serviços de estética a bares, mesas de sinuca, videogames e estúdios de tatuagem para momentos de relaxamento.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <img
+                    src="download.jpeg"
+                    alt="Internet das Coisas"
+                >
+
+                <h3>Barbearia de Bairro e Express.</h3>
+
+                <p>
+                  De Bairro e Express: Foca na praticidade e no atendimento rápido do dia a dia, oferecendo excelente custo-benefício, atendimento por ordem de chegada e foco na manutenção de cortes populares como o degradê (fade).
+                    
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <img
+                    src="download (1).jpeg"
+                    alt="Realidade Virtual"
+                >
+
+                <h3>Temática / Conceitual</h3>
+
+                <p>
+                    Temática / Conceitual (Estilo Único): Foca em criar uma experiência imersiva baseada em uma paixão ou estilo de vida específico. Toda a decoração, música e vestimenta dos profissionais giram em torno de um tema central.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- INOVAÇÃO -->
+
+    <section id="inovacao">
+
+        <h2>Tipos de corte de cabelo</h2>
+
+        <div class="cards">
+
+
+            <div class="card">
+
+                <h3>Degrade</h3>
+
+                <p>
+                    O foco aqui é o acabamento perfeito das laterais, mostrando o sombreado bem marcado que valoriza as linhas do rosto e traz um aspecto moderno.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    Cortes Modernos e Texturizados
+                    </h3>
+
+                <p>
+                    Ideais para quem busca praticidade. Veja o Buzz Cut (estilo raspado bem desenhado) e o French Crop (com a franja reta característica na testa e fios texturizados no topo).
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Cortes Clássicos e Sociais</h3>
+
+                <p>
+                    Estilos atemporais e elegantes. O Slick Back mostra os fios totalmente alinhados para trás, o Side Part traz a divisão lateral clássica e limpa, e o Pompadour destaca o topete volumoso de estilo vintage.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Cortes Conceituais e Urbanos</h3>
+
+                <p>
+                    Para quem quer uma identidade forte e visual ousado. O Mullet com os fios mais longos na nuca e o Moicano Moderno (Faux Hawk) centralizando o volume no topo com as laterais em degradê.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TECNOLOGIA E SOCIEDADE -->
+
+    <section>
+
+    </section>
+
+
+    <!-- ATIVIDADES -->
+
+    <section id="atividades">
+
+        <h2>Preços dos cortes, mais adicionais</h2>
+
+
+        <div class="atividade">
+
+            <h3>Degrade</h3>
+
+            <p>
+                Custa R$35,00
+            </p>
+
+        </div>
+
+
+        <div class="atividade">
+
+            <h3>Cortes Modernos e Texturizados</h3>
+
+            <p>
+                Custa R$50,00 
+            </p>
+
+        </div>
+
+
+        <div class="atividade">
+
+            <h3>Cortes Clássicos e Sociais</h3>
+
+            <p>
+                Custa R$25,00
+            </p>
+
+        </div>
+
+
+        <div class="atividade">
+
+            <h3>Cortes Conceituais e Urbanos</h3>
+
+            <p>
+                Custa R$45,00
+            </p>
+
+        </div>
+
+
+        <div class="atividade">
+
+            <h3>Adicionais: Sombrancelhas, Riscos e limpeza de pele</h3>
+
+            <p>
+                Custos: Sombrancelha: R$10,00
+                        Riscos: R$5,00
+                        limpeza de pele: R$15,00
+            </p>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- PROJETO FINAL -->
+
+    <section id="projeto">
+
+        <div class="projeto">
+
+            <h2>Agendar</h2>
+
+            
+    </section>
+
+
+</body>
+
+</html>
